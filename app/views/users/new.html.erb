@@ -4,19 +4,17 @@
           <div id="welcome"></div>
             <%= image_tag("data-logo.png", :alt => "rss feed", :class => 'data-logo') %>
 
-          <div class="row" >
 
-      <div class=" col-md-4 col-md-offset-4 ms-formfield">
+    <div class="col-md-4 col-md-offset-4 ms-formfield">
       <%= bootstrap_form_for(@user) do |f| %><br />
-   <%= f.text_field :email, hide_label: true,  placeholder: "Email"%>
-   <%= f.text_field :first_name, hide_label: true, placeholder: "Full Name"%>
-   <%= f.text_field :last_name, hide_label: true, placeholder: "Last Name"%>
-   <%= f.primary "Make My DataLus!" %>
-    <!-- Trigger email sent for new user -->
+      <%= f.text_field :email, hide_label: true,  placeholder: "Email"%>
+      <%= f.text_field :first_name, hide_label: true, placeholder: "Full Name"%>
+      <%= f.text_field :last_name, hide_label: true, placeholder: "Last Name"%>
+      <%= f.primary "Join Event" %>
+      <!-- Trigger email sent for new user -->
 
-  </div>
-  <% end %>
-   </div>
+      <% end %>
+    </div>
       </div>
 
 </section>
