@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
   resource :sessions, only: [:new, :create, :destroy] #this is a singular resource, not resources.
   resources :users do
     resources :photos, only: [:index, :new, :create]

@@ -1,6 +1,6 @@
 require 'bcrypt'
 class User < ActiveRecord::Base
-
+  has_many :events
 def to_s
   "This person's email is #{self.email}"
 end
