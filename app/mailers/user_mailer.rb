@@ -28,7 +28,7 @@ class UserMailer < ApplicationMailer
     @greeting = "Hi someone has invited you to an event !"
     #@greeting = "Hi! #{user.name}"
 
-    mail to: "#{invited}, subject: "Welcome To DataLus!"
+    mail to: invited, subject: "Welcome To DataLus!"
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
