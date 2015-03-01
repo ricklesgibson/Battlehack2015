@@ -12,6 +12,14 @@
    
  // }
 
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: none !important;
+}
+
 .fill-in{
 
   h1{ 
@@ -228,6 +236,16 @@ ul{
 
 .center{
   margin : 0 auto;
+}
+
+#events {
+  background: image-url("events.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 768px;
+  width: 100%;
+  display: block;
+  margin-top: -50px;
 }
 
 #blank-bg {
