@@ -1,6 +1,6 @@
-class EventsController < UsersController
+class EventsController < ApplicationController
   def index
-    @events = Event.all
+    @event = Event.all
   end
 
   def new
@@ -12,8 +12,8 @@ class EventsController < UsersController
   end
 
   def create
-  
-    event = Event.new(params.require(:event)
+    
+    event = current_user.events.new(event_params)
       if event.save
       redirect_to events_path
     else 
@@ -30,4 +30,13 @@ class EventsController < UsersController
 
   def destroy
   end
+
+private
+    def set_event
+      @event = Event.find(params[:id])
+    end
+
+    def event_params
+      params.require(:event).permit(:event, :email, :title, :address, :invited, :date, :user_id)
+    end
 end
