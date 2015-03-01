@@ -5,6 +5,7 @@ gem 'sendgrid-actionmailer'
 
 #braintree
 gem "braintree"
+gem 'braintree-rails'
 #gem 'client_side_validations'
 
 #gem for adding files

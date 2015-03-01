@@ -2,12 +2,22 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
 module Simply
   class Application < Rails::Application
+
+ Braintree::Configuration.environment = :sandbox
+  Braintree::Configuration.merchant_id = 'ffdqc9fyffn7yn2j'
+  Braintree::Configuration.public_key = 'qj65nndbnn6qyjkp'
+  Braintree::Configuration.private_key = 'a3de3bb7dddf68ed3c33f4eb6d9579ca'
+
+  
+  
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
