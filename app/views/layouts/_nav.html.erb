@@ -21,8 +21,7 @@
             <li class="active"> <%#= link_to "Home", show_user_path %></li>
             <li class="active"> <%= link_to "Log out", sessions_path, method: :delete %></li>
             <li class="active"> <%= link_to "Edit Page", edit_user_path(current_user)%></li>
-            <li class="active"> <%= image_tag @user.avatar.url(:icon) %> </li>
-           <li class="active"> <%= link_to "#{@user.first_name}", "#" %></li>
+           
 
           <% else %>
             <li class="active"> <%= link_to "Sign up", new_user_path, method: :get %></li>

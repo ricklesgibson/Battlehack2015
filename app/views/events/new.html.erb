@@ -1,0 +1,30 @@
+<h1>Events#new</h1>
+<%= current_user %>
+<p>Find me in app/views/events/new.html.erb</p>
+
+ <%= bootstrap_form_for(@event) do |f| %>
+
+      <div class="field">
+        <%= f.label :date %><br>
+        <%= f.date_field :date %>
+      </div>
+
+      <div class="field">
+        <%= f.label :address %><br>
+        <%= f.text_field :address %>
+      </div>
+
+      <div class="field">
+        <%= f.label :title %><br>
+        <%= f.text_field :title %>
+      </div>
+
+      <div class="field">
+        <%= f.label :invited %><br>
+        <%= f.text_field :invited %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
