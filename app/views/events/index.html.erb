@@ -3,7 +3,9 @@
 
 
 <% @event.each do |u| %>
-   <p><%= u.title %></p>
-   <p><%= u.user_id %></p>
+   Event User ID:<p><%= u.user_id %></p>
+   <%= link_to u.title, event_path(u) %>
+
+   
 
 <% end %>
