@@ -14,7 +14,9 @@ class EventsController < ApplicationController
   def create
     
     event = current_user.events.new(event_params)
+    invited = event.invited
       if event.save
+        UserMailer.invite(invited).deliver_now
       redirect_to events_path
     else 
       redirect_to new_events_path

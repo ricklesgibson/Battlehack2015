@@ -23,6 +23,14 @@ class UserMailer < ApplicationMailer
     mail to: "#{user.email}", subject: "Welcome To DataLus!"
   end
 
+  def invite(invited)
+    #generate a welcome email when a user is generated
+    @greeting = "Hi someone has invited you to an event !"
+    #@greeting = "Hi! #{user.name}"
+
+    mail to: invited, subject: "Welcome To DataLus!"
+  end
+
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
