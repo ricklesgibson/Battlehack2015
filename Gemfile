@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
+#sendgrid
+gem 'sendgrid-actionmailer'
 
 
+#braintree
+gem "braintree"
 #gem 'client_side_validations'
 
 #gem for adding files
