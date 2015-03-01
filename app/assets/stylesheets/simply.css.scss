@@ -12,6 +12,102 @@
    
  // }
 
+ .add-payment-method-view {
+  padding-top: 40px;
+
+ }
+
+ div#dropin {
+  opacity: 0.9;
+  padding: 30px;
+  background: white;
+  width: 80%;
+  input[type="submit"] {
+    background: blue!important;
+  }
+
+}
+
+
+#checkout-bg {
+  background: image-url("checkout-bg.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 768px;
+  width: 100%;
+  display: block;
+  margin-top: -50px;
+  color: white;
+
+  .btn-primary {
+  width: 80%;
+  }
+}
+
+.payment-method-options {
+  margin-top: 40px;
+}
+
+#coinbase-container {
+  padding: 40px !important;
+}
+
+#checkout {
+  margin-top: 200px !important;
+  width: 50%;
+  margin: 0 auto;
+
+}
+
+ #my-events {
+  background: image-url("myevents.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 768px;
+  width: 100%;
+  display: block;
+  margin-top: -50px;
+  color: white;
+
+  h1 {
+    margin-top: 100px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 30px;
+    
+    a {
+      color: #1794FF;
+
+      &:hover {
+        text-decoration: none;
+
+      }
+    }
+  }
+}
+
+
+ .email-user {
+  font-size: 14px;
+ }
+
+.user-profile {
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+ .greg-w {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+  margin-top: 40px;
+ }
+
 label {
   display: inline-block;
   max-width: 100%;
@@ -256,6 +352,21 @@ ul{
   width: 100%;
   display: block;
   margin-top: -50px;
+}
+
+#adventure-bg {
+  background: image-url("adventure.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 768px;
+  width: 100%;
+  display: block;
+  margin-top: -50px;
+  color: white;
+
+  h1 {
+    margin-top: 140px;
+  }
 }
 
 #home {
